@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.input-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+input {
+  padding: 10px;
+  width: 220px;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+/* 🟢 Present Button */
+.btn-present {
+  background-color: #16a34a;
+}
+.btn-present:hover {
+  background-color: #15803d;
+}
+
+/* 🔵 Absent Button */
+.btn-absent {
+  background-color: #2563eb;
+}
+.btn-absent:hover {
+  background-color: #1e40af;
+}
+
+/* ❌ Remove Button */
+.btn-remove {
+  background-color: #dc2626;
+}
+.btn-remove:hover {
+  background-color: #b91c1c;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 550px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+/* Mobile support */
+@media (max-width: 600px) {
+  input, button {
+    width: 100%;
+  }
+
+  th, td {
+    font-size: 0.8rem;
+  }
+}
