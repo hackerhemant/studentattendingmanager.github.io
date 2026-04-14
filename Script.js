@@ -29,7 +29,6 @@ function render() {
         <td>${percent}%</td>
         <td>
           <button class="btn-remove" onclick="removeStudent(${index})">
-            ❌
           </button>
         </td>
       </tr>
